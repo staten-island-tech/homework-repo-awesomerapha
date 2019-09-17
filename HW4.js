@@ -21,7 +21,7 @@ function born1500(x) {
         return x;
     }
 }
-let filtered = inventors.filter(born1500);
+let filtered = inventors.year.filter(born1500);
 console.table(filtered);
    
  
