@@ -30,7 +30,7 @@ console.table(inventorsFifteen);
     //console.table the results
 
 let firstLast = inventors.map(function onlyFirstLast(x) {
-    return inventors.first;
+    return `${x.first} ${x.last}`;
     
 });
 console.table(firstLast);
