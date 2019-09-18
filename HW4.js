@@ -16,17 +16,19 @@ const inventors = [
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's, use console.table to display the results
-function born1500(x) {
-    if(x < 1600) {
-        return x;
-    }
-}
-let filtered = inventors.year.filter(born1500);
-console.table(filtered);
-   
+let inventorsFifteen = inventors.filter(function fifteenCheck(inventor) {
+    return inventor.year < 1600;
+});
+console.table(inventorsFifteen);
  
 
 
     // Array.prototype.map()
     // 2. Give us an array of the inventor first and last names
     //console.table the results
+
+let firstLast = inventors.map(function onlyFirstLast(x) {
+    return inventors.first;
+    
+});
+console.table(firstLast);
