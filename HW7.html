@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The.......Spread Operator</title>
+</head>
+<body>
+    <script>
+        const featured = ['Deep Dish', 'Peperoni', 'Hawaiian'];
+        const specialty = ['Meatzza', 'Spicy Mama', 'Margherita'];
+        let pizzas = [];
+        //pizzas = pizzas.concat(featured);
+        //pizzas.push('veg');
+        //pizzas.concat(specialty);
+        //console.log(pizzas);
+        //Using ...arrayName allows you to put every element in an array into a newly formed array. For example, putting featured and specialty into one array by const pizzat = [...featured , ...specialty] 
+
+        //IMPORTANT: Changing value of element in new array that was from the spred operator WILL change the original arrays element in its respective positiong as well.
+        const deepDish = {
+            pizzaName: 'Deep Dish',
+            size: 'Medium',
+            ingredients: ['Marinara', 'Italian Sausage', 'Dough', 'Cheese']
+        };
+
+    </script>
+</body>
+</html>
