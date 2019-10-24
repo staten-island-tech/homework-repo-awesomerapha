@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <title>Async Await</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        async function go() {
+             const p1 = fetch('https://api.github.come/users/wesbos').then(r => r.json());
+            const p2 = fetch('https://api.github.come.users.stolinski').then(r = r.json());
+            //r = json() turns it into json to be able to get the proper data from the fetch
+            //wait for both of them to come back
+            const res = await Promise.all([p1, p2]);
+             //Makes a mega promise for both fetches and waits for them both to come back
+            const dataPromises = res.map(r => r.json());
+            const [wes, scott] = await Promise.all(dataPromises);
+            console.log(wes, scott);
+            
+           
+        }
+        go(); */
+
+        async function getData() {
+            const promises = names.map(name=> fetch(`https://api.github.come/users/${name}`)).then(r => r.json());
+            const people = await Promise.all(promises);
+            console.log(people);
+        }
+        getData(['wesbos', 'stolinski', 'darcyclarke'])
+        //Third request auto makes the third request for us and can be seen in the network tab in inspect element
+        
+        </script>
+</body>
+</html>
