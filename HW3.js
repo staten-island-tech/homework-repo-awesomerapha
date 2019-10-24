@@ -27,3 +27,4 @@ edit: function(id){
 todo.add();
 todo.edit(12312412);
 //Example of how you can make multiple functions under a single variable and call each individual functions using a '.' after the variable name
+
